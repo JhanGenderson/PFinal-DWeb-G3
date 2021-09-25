@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruda&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Ruda&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <header class="header-home">
+      <!-- Navegacion -->
+      <nav class="main-menu">
+        <a href="../index.html" class="logo"
+          ><img src="../img/logoPizza.svg" alt=""
+        /></a>
+        <ul class="menu-desktop">
+          <li><a href="../index.html" class="link-menu">Home</a></li>
+          <li><a href="../html/aboutUs.html" class="link-menu">About Us</a></li>
+          <li><a href="../html/findUs.html" class="link-menu">Find Us</a></li>
+          <li><a href="../html/menu.html" class="link-menu">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Platos del menu -->
+    <section class="seccion4">
+      <div class="titulo-menu">
+        <h1>OUR MENU</h1>
+      </div>
+      <nav>
+        <ul class="nav-platos">
+          <li class="link-menu" id="myBtn">ADD PRODUCT</li>
+        </ul>
+      </nav>
+      <!-- Contenido -->
+      <div class="menu-content" id="divPizza">
+        <div class="plato-content">
+          <figure class="foto4">
+            <img src="../img/Pizza1.jpg" alt="" />
+          </figure>
+          <article class="plato-info">
+            <p class="plato-Name">LOREM IPSUM</p>
+            <p class="plato-Price">$25</p>
+            <p class="plato-Description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi
+              cumque minus eaque, totam neque quaerat officiis eius! Labore,
+              rerum.
+            </p>
+          </article>
+        </div>
+        <div class="plato-content">
+          <figure class="foto4">
+            <img src="../img/Pizza2.jpg" alt="" />
+          </figure>
+          <article class="plato-info">
+            <p class="plato-Name">LOREM IPSUM</p>
+            <p class="plato-Price">$25</p>
+            <p class="plato-Description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi
+              cumque minus eaque, totam neque quaerat officiis eius! Labore,
+              rerum.
+            </p>
+          </article>
+        </div>
+        <div class="plato-content">
+          <figure class="foto4">
+            <img src="../img/Pizza3.jpg" alt="" />
+          </figure>
+          <article class="plato-info">
+            <p class="plato-Name">LOREM IPSUM</p>
+            <p class="plato-Price">$25</p>
+            <p class="plato-Description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi
+              cumque minus eaque, totam neque quaerat officiis eius! Labore,
+              rerum.
+            </p>
+          </article>
+        </div>
+        <div class="plato-content">
+          <figure class="foto4">
+            <img src="../img/Pizza3.jpg" alt="" />
+          </figure>
+          <article class="plato-info">
+            <p class="plato-Name">LOREM IPSUM</p>
+            <p class="plato-Price">$25</p>
+            <p class="plato-Description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi
+              cumque minus eaque, totam neque quaerat officiis eius! Labore,
+              rerum.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"> &times;</span>
+        <div class="formulario">
+          <form>
+            <!-- Nombre del producto -->
+            <label> Nombre del producto </label>
+            <input
+              type="text"
+              id="pName"
+              placeholder="Ingrese el nombre del producto"
+            />
+
+            <!-- Precio del producto -->
+            <label> Precio del producto </label>
+            <input
+              type="number"
+              id="pPrice"
+              placeholder="Ingrese el precio del producto"
+            />
+
+            <!-- Categoria del producto -->
+            <label> Categoria del producto </label>
+            <select name="" id="sProduct">
+              <option value="Pizza">Pizza</option>
+              <option value="Complementos">Complementos</option>
+              <option value="Bebidas">Bebidas</option>
+            </select>
+
+            <!--Foto del producto  -->
+            <input type="file" id="pDocument" />
+
+            <!-- Boton del modal -->
+            <button type="button" class="btnProduct" onclick="addPizza()">
+              Agregar Producto
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

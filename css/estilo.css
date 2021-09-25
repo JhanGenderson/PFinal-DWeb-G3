@@ -1,0 +1,930 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main-Page */
+header,
+nav,
+section {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  transition: 0.4s all ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.main-menu {
+  background-color: rgb(134, 16, 16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 2px 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logo {
+  width: 64px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+
+.logo img {
+  width: 100%;
+}
+
+.menu-desktop {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-menu {
+  text-transform: uppercase;
+  font-family: 'Ruda',sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 1rem;
+  line-height: 70px;
+  height: 70px;
+  display: block;
+  color:white;
+  transition: 0.4s all ease-in-out;
+}
+
+.link-menu:hover {
+  box-shadow: 0 -5px 0 0 white inset;
+  transform: scale(0.95);
+}
+
+/* #cuerpo {
+  overflow: hidden;
+} */
+.foto1 {
+  background-color: rgb(134, 16, 16);
+}
+
+.foto1 img {
+  width: 100%;
+  height: 662px;
+}
+
+.title-portada {
+  text-transform: uppercase;
+  position: absolute;
+  width: 500px;
+  height: 67px;
+  left: 33%;
+  top: 250px;
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.frase-portada {
+  position: absolute;
+  width: 745px;
+  height: 201px;
+  left: 24%;
+  top: 370px;
+  font-family: "Ruda";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  color: white;
+}
+
+footer{
+  background-color: rgb(134, 16, 16);
+}
+
+footer > p{
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* About Us */
+#cuerpo-about {
+  overflow: hidden;
+}
+
+.seccion2 {
+  margin-top: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 694px;
+}
+
+.info {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 630px;
+  color: white;
+}
+
+.info > h1 {
+  border-bottom: 5px solid #f2c94c;
+  font-family: "Quattrocento";
+  width: 40%;
+  font-size: 45px;
+}
+
+.info > p {
+  width: 70%;
+  font-weight: 400;
+  font-family: "Ruda";
+  font-style: normal;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.info > button {
+  background-color: #000;
+  width: 120px;
+  height: 54px;
+  border: 2px solid #f2c94c;
+  color: #f2c94c;
+  border-radius: 10px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.foto2 {
+  width: 50%;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+}
+
+.foto2 > img {
+  width: 90%;
+  height: 100%;
+  padding: 2.5rem;
+  border-radius: 50px;
+}
+
+/* Find-Us */
+#cuerpo-find {
+  overflow: hidden;
+}
+
+.seccion3 {
+  margin-top: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  height: 630px;
+  flex-direction: column;
+}
+
+.seccion3 > h1 {
+  width: 19%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Quattrocento";
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  border-bottom: 5px solid #f2c94c;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto3 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 460px;
+}
+
+.foto3 > img {
+  width: 80%;
+  border-radius: 40px;
+  padding: 1rem;
+}
+
+.texto1,
+.texto2 {
+  font-size: 25px;
+  font-family: "Ruda";
+  width: 80%;
+  color: white;
+}
+
+.articulo1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Menu */
+.seccion4 {
+  margin-top: 70px;
+  background-color: black;
+  height: 100%;
+}
+
+.titulo-menu {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.titulo-menu > h1 {
+  text-align: center;
+  width: 19%;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Quattrocento";
+  font-weight: normal;
+  border-bottom: 5px solid #f2c94c;
+}
+
+.nav-platos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myBtn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-platos > li {
+  color: #f2c94c;
+  border: 3px solid #f2c94c;
+  border-radius: 10px;
+}
+
+.nav-platos > li:hover {
+  cursor: pointer;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.plato-content {
+  margin-top: 5px;
+  padding: 1rem;
+  display: flex;
+  width: 50%;
+}
+
+.foto4 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 200px;
+}
+
+.foto4 > img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.plato-info {
+  width: 100%;
+  height: 193px;
+  font-family: "Ruda";
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plato-Name {
+  color: #f2c94c;
+  font-family: "Quattrocento";
+  padding: 10px;
+  width: 40%;
+}
+
+.plato-Price {
+  color: #f2c94c;
+  width: 50%;
+  text-align: right;
+  padding: 10px;
+  font-family: "Quattrocento";
+}
+
+.plato-Description {
+  padding: 10px;
+  width: 70%;
+  color: white;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid #f2c94c;
+  width: 80%;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Formulario */
+.formulario input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline;
+  border: 1px solid #f2c94c;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btnProduct {
+  font-size: 20px;
+  width: 100%;
+  font-weight: bolder;
+  color: white;
+  background-color: rgb(134, 16, 16);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Querys */
+@media only screen and (max-width: 1025px) {
+  .main-menu {
+    width: 100%;
+    background-color: rgb(134, 16, 16);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-desktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .seccion1 {
+    width: 100%;
+  }
+
+  .foto1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title-portada {
+    text-transform: uppercase;
+    position: absolute;
+    width: 47%;
+    height: 67px;
+    left: 30%;
+    top: 180px;
+    font-family: "Courier New";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 0%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+
+  .frase-portada {
+    position: absolute;
+    width: 709px;
+    height: 201px;
+    left: 19%;
+    top: 290px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: white;
+  }
+
+  /* About Us */
+  #cuerpo-about {
+    overflow: auto;
+  }
+
+  .seccion2 {
+    height: 100%;
+  }
+
+  .info > p {
+    width: 70%;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .info > h1 {
+    border-bottom: 5px solid #f2c94c;
+    width: 42%;
+    font-size: 35px;
+  }
+
+  .foto2 {
+    height: 560px;
+  }
+
+  /* Find Us */
+  #cuerpo-find {
+    overflow: auto;
+  }
+
+  .seccion3 {
+    margin-top: 73px;
+    height: 545px;
+  }
+
+  .ubicacion {
+    height: 100%;
+  }
+
+  .foto3 {
+    height: 470px;
+  }
+
+  .texto1,
+  .texto2 {
+    font-size: 23px;
+  }
+
+  .articulo1 {
+    height: 96%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Index */
+  .seccion1 {
+    width: 100%;
+  }
+
+  .menu-desktop {
+    width: 100%;
+  }
+
+  .link-menu {
+    font-size: 19px;
+  }
+
+  .title-portada {
+    font-size: 50px;
+  }
+
+  .frase-portada {
+    font-size: 20px;
+    width: 65%;
+  }
+
+  /* About-Us */
+
+  .info > h1 {
+    border-bottom: 5px solid #f2c94c;
+    width: 45%;
+    font-size: 26px;
+  }
+
+  .info > p {
+    line-height: 26px;
+    font-size: 19px;
+  }
+
+  .foto2 {
+    height: 550px;
+  }
+
+  /* Find-Us */
+
+  .ubicacion {
+    height: 85%;
+  }
+
+  .seccion3 {
+    height: 580px;
+  }
+
+  .seccion3 > h1 {
+    width: 30%;
+    font-size: 40px;
+  }
+
+  .foto3 {
+    width: 55%;
+  }
+
+  .articulo1 {
+    height: 86%;
+  }
+
+  .texto1,
+  .texto2 {
+    font-size: 21px;
+  }
+
+  /* Modal */
+  .titulo-menu > h1 {
+    text-align: center;
+    width: 25%;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    border-bottom: 5px solid #f2c94c;
+  }
+
+  .link-menu {
+    font-size: 18px;
+  }
+
+  .foto4 {
+    width: 70%;
+    height: 140px;
+  }
+
+  .plato-Name,
+  .plato-Price,
+  .plato-Description {
+    font-size: 16px;
+  }
+
+  .plato-Name {
+    width: 60%;
+  }
+
+  .plato-Price {
+    width: 40%;
+  }
+
+  .plato-Description {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  /* Index */
+  .seccion1 {
+    margin-top: 183px;
+  }
+
+  .menu-desktop {
+    flex-direction: column;
+  }
+
+  .link-menu {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0 1rem;
+    line-height: 45px;
+    height: 45px;
+    display: block;
+    color: #000;
+    transition: 0.4s all ease-in-out;
+  }
+
+  .foto1 img {
+    width: 100%;
+    height: 406px;
+  }
+
+  .title-portada {
+    font-size: 35px;
+    width: 55%;
+    left: 23%;
+    top: 200px;
+  }
+
+  .frase-portada {
+    height: 45%;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  /* About-Us */
+  .seccion2 {
+    margin-top: 170px;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info > h1 {
+    width: 55%;
+    text-align: center;
+  }
+
+  .info > p {
+    width: 100%;
+    line-height: 34px;
+    font-size: 22px;
+  }
+
+  .foto2 {
+    width: 100%;
+    height: 500px;
+  }
+
+  .foto2 > img {
+    width: 100%;
+  }
+
+  .seccion3 {
+    height: 100%;
+    margin-top: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .seccion3 > h1 {
+    width: 50%;
+  }
+
+  .ubicacion {
+    flex-direction: column;
+  }
+
+  .foto3 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .foto3 > img {
+    height: 100%;
+  }
+
+  .articulo1 {
+    padding: 2rem;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    height: 400px;
+  }
+
+  .texto1,
+  .texto2 {
+    width: 100%;
+    font-size: 21px;
+  }
+
+  /* Modal */
+  .seccion4 {
+    margin-top: 180px;
+  }
+
+  .nav-platos {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .modal {
+    z-index: 999;
+  }
+
+  .menu-content {
+    flex-wrap: wrap;
+  }
+  .titulo-menu > h1 {
+    width: 45%;
+    font-size: 28px;
+  }
+  .plato-content {
+    width: 100%;
+  }
+
+  .plato-Name {
+    width: 50%;
+  }
+
+  .plato-Description {
+    width: 100%;
+  }
+
+  footer > p{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  /* Index */
+  #cuerpo {
+    overflow: auto;
+  }
+
+  .title-portada {
+    font-size: 35px;
+    width: 62%;
+    left: 21%;
+    top: 200px;
+  }
+  .frase-portada {
+    height: 50%;
+    font-size: 17px;
+  }
+
+  .foto1 img {
+    width: 100%;
+    height: 481px;
+  }
+
+  /* About-Us */
+  .info > h1 {
+    width: 60%;
+    font-size: 25px;
+  }
+
+  .info > p {
+    line-height: 37px;
+    font-size: 19px;
+  }
+
+  /* Find-Us */
+  .seccion3 > h1 {
+    font-size: 35px;
+  }
+
+  .text1,
+  .texto2 {
+    font-size: 18px;
+  }
+
+  /* Modal */
+  .foto4 {
+    width: 65%;
+  }
+
+  .plato-Name {
+    width: 60%;
+  }
+
+  .plato-Description {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  /* Index */
+  #cuerpo {
+    overflow: auto;
+  }
+
+  .foto1 > img {
+    height: 500px;
+  }
+
+  .link-menu {
+    font-size: 17px;
+  }
+
+  .title-portada {
+    font-size: 30px;
+  }
+
+  .frase-portada {
+    font-size: 17px;
+  }
+
+  /* About-Us */
+  .info > h1 {
+    width: 65%;
+    font-size: 23px;
+  }
+
+  .info > p {
+    line-height: 29px;
+    font-size: 19px;
+  }
+
+  .foto2 {
+    height: 450px;
+  }
+
+  .foto2 > img {
+    padding: 1.5rem;
+  }
+
+  /* Find-Us */
+  .seccion3 > h1 {
+    width: 55%;
+  }
+
+  .texto1 {
+    font-size: 17px;
+  }
+  .texto2 {
+    font-size: 15px;
+  }
+
+  footer > p{
+    font-size: 13px;
+  }
+}
